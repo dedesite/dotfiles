@@ -11,11 +11,10 @@ echo "=================="
 
 echo -e "\nThis script will install the following stuff :"
 
-echo -e "\t• dotfiles for vim, tmux, htop, etc... (see list in files/)"
+echo -e "\t• dotfiles for tmux, htop, etc... (see list in files/)"
 echo -e "\t• ~/.gitconfig, asking your for information"
 echo -e "\t• rbenv to manage your rubies"
 echo -e "\t• a ruby of your choice (MRI, Rubinius, JRuby)"
-echo -e "\t• vim plugins (see list in scripts/90_bootstrap-vim.bash)"
 
 echo -e "\nWhen asked questions, the following replies can be made :"
 echo -e "\t• y : yes"

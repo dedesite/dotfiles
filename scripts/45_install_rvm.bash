@@ -29,7 +29,7 @@ if [ -r $ENVSCRIPT ]; then
 fi
 
 # Install rvm
-bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
+bash < <(curl -sSL https://get.rvm.io | bash -s stable --ruby)
 
 # Install environnement stuff
 echo "# this file is auto generated - don't edit it" > $ENVSCRIPT

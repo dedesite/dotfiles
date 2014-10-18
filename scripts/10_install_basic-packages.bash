@@ -11,13 +11,13 @@ get_os
 
 case "$OS" in
   "ubuntu"|"debian")
-    PKGLIST="openssh-server vim-nox htop ethtool screen dstat tmux"
+    PKGLIST="openssh-server htop ethtool screen dstat tmux"
     ;;
   "arch")
     PKGLIST="tmux vim-runtime htop ethtool dstat"
     ;;
   "centos"|"redhat")
-    PKGLIST="tmux vim-enhanced htop ethtool dstat"
+    PKGLIST="tmux htop ethtool dstat"
     ;;
 esac
 
