@@ -3,7 +3,7 @@ echo "=============================="
 echo "Removing useless Xubuntu package"
 echo "=============================="
 
-sudo apt-get remove abiword gnumeric ristretto parole
+sudo apt-get remove -y abiword gnumeric ristretto parole
 
 echo
 echo "=============================="
@@ -19,13 +19,13 @@ echo "=============================="
 echo "Updating package list and upgrading system"
 echo "=============================="
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 
 echo
 echo "=============================="
 echo "Installing good multimedia packages"
 echo "=============================="
-sudo apt-get install vlc xubuntu-restricted-extras libavcodec-extra cheese brasero
+sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell
 #Install encrypted dvd library
 sudo /usr/share/doc/libdvdread4/install-css.sh
 
@@ -33,50 +33,50 @@ echo
 echo "=============================="
 echo "Installing graphic design packages"
 echo "=============================="
-sudo apt-get install gimp inkscape
+sudo apt-get install -y gimp inkscape
 
 echo
 echo "=============================="
 echo "Installing system packages"
 echo "=============================="
-sudo apt-get install gnome-system-monitor synaptic gdebi-core gksu rar unrar usb-creator-gtk
+sudo apt-get install -y gnome-system-monitor synaptic gdebi-core gksu rar unrar usb-creator-gtk wget
 
 
 echo
 echo "=============================="
 echo "Installing web packages"
 echo "=============================="
-sudo apt-get install chromium-browser filezilla icedtea-plugin
+sudo apt-get install -y chromium-browser filezilla icedtea-plugin
 
 echo
 echo "=============================="
 echo "Installing libreoffice"
 echo "=============================="
-sudo apt-get install libreoffice
+sudo apt-get install -y libreoffice
 
 echo
 echo "=============================="
 echo "Installing Wine"
 echo "=============================="
-sudo apt-get install wine1.7
+sudo apt-get install -y wine1.7
 
 echo
 echo "=============================="
 echo "Installing Sublime Text 3"
 echo "=============================="
-sudo apt-get install sublime-text-installer
+sudo apt-get install -y sublime-text-installer
 
 echo
 echo "=============================="
 echo "Installing Node.js"
 echo "=============================="
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
 
 echo
 echo "=============================="
 echo "Installing MySql"
 echo "=============================="
-sudo apt-get install apache2 mysql-server phpmyadmin libmysqld-dev
+sudo apt-get install -y apache2 mysql-server phpmyadmin libmysqld-dev
 
 echo
 echo "=============================="
@@ -90,10 +90,5 @@ echo
 echo "=============================="
 echo "Installing DropBox"
 echo "=============================="
-if ["$ARCH" == "64"]; then
-	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.2_amd64.deb
-	sudo gdebi dropbox_1.6.2_amd64.deb
-else
-	wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.2_i386.deb
-	sudo gdebi dropbox_1.6.2_i386.deb
-fi
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.2_amd64.deb
+sudo gdebi dropbox_1.6.2_amd64.deb
