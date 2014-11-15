@@ -3,7 +3,7 @@ echo "=============================="
 echo "Removing useless Xubuntu package"
 echo "=============================="
 
-sudo apt-get remove -y abiword gnumeric ristretto parole
+sudo apt-get remove -y abiword gnumeric ristretto parole apport
 
 echo
 echo "=============================="
