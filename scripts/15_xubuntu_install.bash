@@ -39,7 +39,7 @@ echo
 echo "=============================="
 echo "Installing system packages"
 echo "=============================="
-sudo apt-get install -y gnome-system-monitor synaptic gdebi-core gksu rar unrar usb-creator-gtk wget
+sudo apt-get install -y gnome-system-monitor synaptic gdebi-core gksu rar unrar usb-creator-gtk wget gparted
 
 
 echo
