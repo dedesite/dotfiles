@@ -76,7 +76,7 @@ echo
 echo "=============================="
 echo "Installing MySql"
 echo "=============================="
-sudo apt-get install -y apache2 mysql-server phpmyadmin libmysqld-dev
+sudo apt-get install -y mysql-server libmysqld-dev
 
 echo
 echo "=============================="
