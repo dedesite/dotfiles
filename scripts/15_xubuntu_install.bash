@@ -3,7 +3,7 @@ echo "=============================="
 echo "Removing useless Xubuntu package"
 echo "=============================="
 
-sudo apt-get remove -y abiword gnumeric ristretto parole apport
+sudo apt-get remove -y ristretto parole apport
 
 echo
 echo "=============================="
@@ -25,7 +25,7 @@ echo
 echo "=============================="
 echo "Installing good multimedia packages"
 echo "=============================="
-sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell
+sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell sound-juicer ogmrip arista
 #Install encrypted dvd library
 sudo /usr/share/doc/libdvdread4/install-css.sh
 
@@ -47,12 +47,6 @@ echo "=============================="
 echo "Installing web packages"
 echo "=============================="
 sudo apt-get install -y chromium-browser filezilla icedtea-plugin
-
-echo
-echo "=============================="
-echo "Installing libreoffice"
-echo "=============================="
-sudo apt-get install -y libreoffice
 
 echo
 echo "=============================="
