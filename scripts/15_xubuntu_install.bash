@@ -7,12 +7,13 @@ sudo apt-get remove -y ristretto parole apport
 
 echo
 echo "=============================="
-echo "Adding Wine, SublimeText and nodejs ppa"
+echo "Adding Wine, SublimeText Pinta and nodejs ppa"
 echo "=============================="
 
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo add-apt-repository ppa:chris-lea/node.js 
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
 
 echo
 echo "=============================="
@@ -33,7 +34,7 @@ echo
 echo "=============================="
 echo "Installing graphic design packages"
 echo "=============================="
-sudo apt-get install -y gimp inkscape
+sudo apt-get install -y gimp inkscape pinta
 
 echo
 echo "=============================="
@@ -52,7 +53,7 @@ echo
 echo "=============================="
 echo "Installing Wine"
 echo "=============================="
-sudo apt-get install -y wine1.7
+sudo apt-get install -y wine1.8
 
 echo
 echo "=============================="
