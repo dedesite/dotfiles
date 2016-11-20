@@ -13,7 +13,6 @@ echo "=============================="
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository ppa:chris-lea/node.js
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
 
 echo
 echo "=============================="
@@ -26,7 +25,7 @@ echo
 echo "=============================="
 echo "Installing good multimedia packages"
 echo "=============================="
-sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell sound-juicer ogmrip arista
+sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell sound-juicer ogmrip handbrake
 #Install encrypted dvd library
 sudo /usr/share/doc/libdvdread4/install-css.sh
 
