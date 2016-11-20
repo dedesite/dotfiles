@@ -12,7 +12,8 @@ echo "=============================="
 
 sudo add-apt-repository ppa:wine/wine-builds
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo add-apt-repository ppa:chris-lea/node.js
+curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
 
 echo
 echo "=============================="
@@ -39,7 +40,7 @@ echo
 echo "=============================="
 echo "Installing system packages"
 echo "=============================="
-sudo apt-get install -y gnome-system-monitor synaptic gdebi-core gksu rar git unrar usb-creator-gtk wget gparted gnome-font-viewer
+sudo apt-get install -y gnome-system-monitor synaptic gdebi-core gksu rar git curl unrar usb-creator-gtk wget gparted gnome-font-viewer
 
 
 echo
