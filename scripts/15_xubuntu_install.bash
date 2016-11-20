@@ -10,7 +10,7 @@ echo "=============================="
 echo "Adding Wine, SublimeText Pinta and nodejs ppa"
 echo "=============================="
 
-sudo add-apt-repository ppa:ubuntu-wine/ppa
+sudo add-apt-repository ppa:wine/wine-builds
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository ppa:chris-lea/node.js
 
@@ -52,7 +52,7 @@ echo
 echo "=============================="
 echo "Installing Wine"
 echo "=============================="
-sudo apt-get install -y wine1.8
+sudo apt-get install -y --install-recommends winehq-devel
 
 echo
 echo "=============================="
