@@ -76,13 +76,10 @@ echo
 echo "=============================="
 echo "Installing Skype"
 echo "=============================="
-wget http://www.skype.com/go/getskype-linux-beta-ubuntu-64
-mv getskype-linux-beta-ubuntu-64 skype-bin.deb
-sudo dpkg -i skype-bin.deb
+
 
 echo
 echo "=============================="
 echo "Installing DropBox"
 echo "=============================="
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
-sudo dpkg -i dropbox_2015.02.12_amd64.deb
+
