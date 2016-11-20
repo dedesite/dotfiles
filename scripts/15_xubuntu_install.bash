@@ -25,9 +25,9 @@ echo
 echo "=============================="
 echo "Installing good multimedia packages"
 echo "=============================="
-sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell sound-juicer ogmrip handbrake
+sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell sound-juicer ogmrip handbrake libdvd-pkg
 #Install encrypted dvd library
-sudo /usr/share/doc/libdvdread4/install-css.sh
+sudo dpkg-reconfigure libdvd-pkg
 
 echo
 echo "=============================="
