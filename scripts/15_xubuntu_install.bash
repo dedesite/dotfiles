@@ -14,6 +14,7 @@ sudo add-apt-repository ppa:wine/wine-builds
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
+sudo add-apt-repository ppa:haraldhv/shotcut
 
 echo
 echo "=============================="
@@ -26,7 +27,7 @@ echo
 echo "=============================="
 echo "Installing good multimedia packages"
 echo "=============================="
-sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell sound-juicer ogmrip handbrake libdvd-pkg
+sudo apt-get install -y vlc xubuntu-restricted-extras libavcodec-extra cheese brasero shotwell shotcut sound-juicer ogmrip handbrake libdvd-pkg
 #Install encrypted dvd library
 sudo dpkg-reconfigure libdvd-pkg
 
