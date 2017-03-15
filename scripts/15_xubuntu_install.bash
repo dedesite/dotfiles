@@ -7,7 +7,7 @@ sudo apt-get remove -y ristretto parole apport
 
 echo
 echo "=============================="
-echo "Adding Wine, SublimeText, Pinta, Peek and nodejs ppa"
+echo "Adding Wine, SublimeText, Pinta, Peek, shotcut and nodejs ppa"
 echo "=============================="
 
 sudo add-apt-repository ppa:wine/wine-builds
