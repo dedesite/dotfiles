@@ -7,7 +7,7 @@ sudo apt-get remove -y ristretto parole apport
 
 echo
 echo "=============================="
-echo "Adding Wine, SublimeText Pinta and nodejs ppa"
+echo "Adding Wine, SublimeText, Pinta, Peek and nodejs ppa"
 echo "=============================="
 
 sudo add-apt-repository ppa:wine/wine-builds
@@ -15,6 +15,7 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo add-apt-repository ppa:haraldhv/shotcut
+sudo add-apt-repository ppa:peek-developers/stable
 
 echo
 echo "=============================="
@@ -35,7 +36,7 @@ echo
 echo "=============================="
 echo "Installing graphic design packages"
 echo "=============================="
-sudo apt-get install -y gimp inkscape pinta
+sudo apt-get install -y gimp inkscape pinta peek
 
 echo
 echo "=============================="
