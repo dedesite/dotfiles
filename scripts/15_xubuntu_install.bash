@@ -42,7 +42,7 @@ echo
 echo "=============================="
 echo "Installing system packages"
 echo "=============================="
-sudo apt-get install -y gnome-system-monitor synaptic gdebi-core gksu rar git curl unrar usb-creator-gtk wget gparted gnome-font-viewer
+sudo apt-get install -y pdftk gnome-system-monitor synaptic gdebi-core gksu rar git curl unrar usb-creator-gtk wget gparted gnome-font-viewer
 
 
 echo
