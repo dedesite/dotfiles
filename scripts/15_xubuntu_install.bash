@@ -71,5 +71,18 @@ echo
 echo "=============================="
 echo "Installing MySql"
 echo "=============================="
-sudo apt-get install -y mysql-server libmysqld-dev
+sudo apt-get install -y mysql-server mysql-client libmysqld-dev
+sudo mysql_secure_installation
+# If you can't connect to mysql with php
+# https://askubuntu.com/a/784347/705371
+
+echo
+echo "=============================="
+echo "Installing Php And composer"
+echo "=============================="
+sudo apt-get install -y php7.2 php7.2-curl php7.2-zip php7.2-xml php7.2-mysql
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+sudo chmod +x /usr/local/bin/composer
+
 
