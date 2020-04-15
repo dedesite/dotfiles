@@ -41,7 +41,7 @@ echo
 echo "=============================="
 echo "Installing system packages"
 echo "=============================="
-sudo apt-get install -y gnome-system-monitor gdebi-core rar git curl unrar usb-creator-gtk wget gparted gnome-font-viewer
+sudo apt-get install -y gnome-system-monitor gdebi-core rar git curl unrar usb-creator-gtk wget gparted gnome-font-viewer seahorse
 
 
 echo
